@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="Button.css">
+</head>
+<body>
+
+  <title>Rock Paper Scissor</title>
+
+  <center><p><font size= 100>Click one :></font></p></center>
+
+  <!--Rock fuction-->
+  <button class="Rock-button" onclick="
+    let computerChoice = ''
+    let randomNumber = Math.random ()
+    if (randomNumber > 0 && randomNumber <= 1 /3)  {
+      computerChoice = 'Rock'
+    }
+    else if (randomNumber >1/3 && randomNumber <= 2/3 ){
+      computerChoice = 'Paper'
+    }
+    else if (randomNumber >2/3 && randomNumber <= 1) {
+      computerChoice = 'Scissor'
+    }
+
+    if (computerChoice === 'Rock')
+      {result = 'Tie.Your opponent choose Rock.'}
+    else if (computerChoice === 'Paper')
+      {result = 'You Lose. Your opponent choose Paper'}
+    else if (computerChoice === 'Scissor')
+      {result = 'You Win. Your opponent choose Scissor'}
+      
+  alert(result)
+
+">Rock</button>
+
+<!--Paper function-->
+  <button class="Paper-button" onclick="
+  computerChoice = ''
+  randomNumber = Math.random()
+  if (randomNumber > 0 && randomNumber <= 1 /3)  {
+      computerChoice ='Rock'
+    }
+    else if (randomNumber >1/3 && randomNumber <= 2/3 ){
+      computerChoice = 'Paper'
+    }
+    else if (randomNumber >2/3 && randomNumber <= 1) {
+      computerChoice = 'Scissor'
+    }
+
+    if(computerChoice === 'Rock') {
+      result = 'You Win.Your opponent choose Rock'
+    }
+    else if (computerChoice === 'Paper'){
+      result = 'Tie. Your opponent choose Paper'
+    }
+    else if  (computerChoice === 'Scissor'){
+      result = 'You Lose.Your opponent choose Scissor'
+    }
+    alert (result)
+  ">Paper</button>
+
+<!--Scissor function-->
+  <button class="Scissor-button" onclick="
+  computerChoice = ''
+  randomNumber = Math.random()
+  if (randomNumber > 0 && randomNumber <= 1 /3)  {
+      computerChoice ='Rock'
+    }
+    else if (randomNumber >1/3 && randomNumber <= 2/3 ){
+      computerChoice = 'Paper'
+    }
+    else if (randomNumber >2/3 && randomNumber <= 1) {
+      computerChoice = 'Scissor'
+    }
+
+    if(computerChoice === 'Rock'){
+      result = 'You Lose.Your opponent choose Rock'
+    }
+    else if (computerChoice === 'Paper'){
+      result = 'You Win.Your opponent choose Paper '
+    }
+    else if (computerChoice === 'Scissor'){
+      result = 'Tie. Your opponent choose Scissor'
+    }
+    alert(result)
+  ">Scissor</button>
+
+</body>
+</html>
